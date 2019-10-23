@@ -24,8 +24,11 @@
 	<div class="box" id="target"></div>
 	<script>
 		'use strict';
-		document.getElementById('target').addEventListener('click', () => {
-			document.getElementById('target').classList.add('circle');
+
+		const target = document.getElementById('target')
+
+		target.addEventListener('click', () => {
+			target.classList.toggle('circle');
 		});
 	</script>
 </body>
